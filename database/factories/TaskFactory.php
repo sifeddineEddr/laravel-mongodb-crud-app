@@ -18,7 +18,7 @@ class TaskFactory extends Factory
     public function definition()
     {
         return [
-            'first_name' => fake()->sentence(8),
+            'task_title' => fake()->sentence(5),
             'status' => fake()->randomElement(['not started', 'in progress', 'done']),
             'user_id' => fake()->randomElement(User::pluck('_id')),
         ];
